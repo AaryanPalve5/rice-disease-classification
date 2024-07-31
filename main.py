@@ -67,3 +67,15 @@ if uploaded_file is not None:
         use_column_width=True,
     )
     st.write(f"Prediction: {predicted_class}")
+# Add a button to redirect to Agrimate homepage
+if st.button('Go to Agrimate Homepage'):
+    st.markdown(
+        """
+        <a href="https://aaryanpalve5.github.io/agrimate/" target="_blank">
+        <button style="padding: 10px; background-color: #34812d; color: white; border: none; border-radius: 5px; cursor: pointer;">
+            Visit Agrimate
+        </button>
+        </a>
+        """,
+        unsafe_allow_html=True
+    )
